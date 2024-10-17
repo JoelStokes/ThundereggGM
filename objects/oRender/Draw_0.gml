@@ -15,7 +15,7 @@ for (var tX = 0; tX < MAP_W; tX++)
 		//Place matching tile in iso x and pseudo z
 		if (tileIndex != 0)
 		{
-			draw_sprite(sStatic, tileIndex-1, roomX, roomY + tileZ);
+			draw_sprite(sStatic, tileIndex-1, roomX, roomY - tileZ);
 		}
 	}
 }

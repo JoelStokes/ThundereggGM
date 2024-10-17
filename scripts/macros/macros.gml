@@ -1,6 +1,6 @@
 //Map width & height in tiles
-#macro MAP_W 32
-#macro MAP_H 24
+#macro MAP_W 50
+#macro MAP_H 50
 
 //Width & Height of isometric tile diamond surface on top of tile
 #macro TILE_W 16
