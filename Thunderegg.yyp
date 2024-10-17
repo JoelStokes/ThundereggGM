@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,7 +34,13 @@
   },
   "name":"Thunderegg",
   "resources":[
+    {"id":{"name":"oRender","path":"objects/oRender/oRender.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
+    {"id":{"name":"TileToScreen","path":"scripts/TileToScreen/TileToScreen.yy",},},
+    {"id":{"name":"sStatic","path":"sprites/sStatic/sStatic.yy",},},
+    {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},},
+    {"id":{"name":"tTiles","path":"tilesets/tTiles/tTiles.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
