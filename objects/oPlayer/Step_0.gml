@@ -1,20 +1,5 @@
 /// @desc Player Update
 
-//Camera Speed Variables
-var camXSpeed = .05;
-var camYSpeed = .05;
-
-//Iso Movement Speed Constants. North is up-right
-enum NORTH{x = 12, y = -6};
-enum NORTHEAST{x = 13, y = 0};
-enum EAST{x = 12, y = 6};
-enum SOUTHEAST{x = 0, y = 13};
-enum SOUTH{x = -12, y = 6};
-enum SOUTHWEST{x = -13, y = 0};
-enum WEST{x = -12, y = -6};
-enum NORTHWEST{x = 0, y = -13};
-var moveSpeed = .1 //Movement speed modifier
-
 //Stop previous player movement when keys released
 xsp = 0;
 ysp = 0;
@@ -44,6 +29,7 @@ var camX = lerp(cam_x(), target_x, camXSpeed);
 var camY = lerp(cam_y(), target_y, camYSpeed);
 camera_set_view_pos(view_camera[0], camX,camY);
 
+//For debugging, popup X & Y Coordinates in gameplay
 if (keyboard_check(vk_f1))
 {
 	get_integer("x pos", x);

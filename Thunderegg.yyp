@@ -26,7 +26,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"pokemon-rs.ttf","CopyToMask":-1,"filePath":"datafiles","name":"pokemon-rs.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -34,17 +36,21 @@
   },
   "name":"Thunderegg",
   "resources":[
+    {"id":{"name":"oBush","path":"objects/oBush/oBush.yy",},},
     {"id":{"name":"oNPC","path":"objects/oNPC/oNPC.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oRender","path":"objects/oRender/oRender.yy",},},
     {"id":{"name":"oShadow","path":"objects/oShadow/oShadow.yy",},},
     {"id":{"name":"oStump","path":"objects/oStump/oStump.yy",},},
+    {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
+    {"id":{"name":"BattleTest","path":"rooms/BattleTest/BattleTest.yy",},},
     {"id":{"name":"MovementTest","path":"rooms/MovementTest/MovementTest.yy",},},
     {"id":{"name":"TileTest","path":"rooms/TileTest/TileTest.yy",},},
     {"id":{"name":"CameraShorthand","path":"scripts/CameraShorthand/CameraShorthand.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"SetObjIsoPos","path":"scripts/SetObjIsoPos/SetObjIsoPos.yy",},},
     {"id":{"name":"TileToScreen","path":"scripts/TileToScreen/TileToScreen.yy",},},
+    {"id":{"name":"sBush","path":"sprites/sBush/sBush.yy",},},
     {"id":{"name":"sHeightTiles_1","path":"sprites/sHeightTiles_1/sHeightTiles_1.yy",},},
     {"id":{"name":"sHeightTiles","path":"sprites/sHeightTiles/sHeightTiles.yy",},},
     {"id":{"name":"sNPC","path":"sprites/sNPC/sNPC.yy",},},
@@ -61,6 +67,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"TileTest","path":"rooms/TileTest/TileTest.yy",},},
     {"roomId":{"name":"MovementTest","path":"rooms/MovementTest/MovementTest.yy",},},
+    {"roomId":{"name":"BattleTest","path":"rooms/BattleTest/BattleTest.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
