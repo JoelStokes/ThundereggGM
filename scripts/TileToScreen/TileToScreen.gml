@@ -5,7 +5,7 @@
 /// @return {real}
 
 function TileToScreenX(_tY, _tX){
-     return ((_tX - _tY) * (TILE_W *0.5)) +(ROOM_W *0.5)
+     return -((_tX - _tY) * (TILE_W *0.5))
 }
 
 /// @function TileToScreenY(_tY, _tX)
@@ -15,5 +15,5 @@ function TileToScreenX(_tY, _tX){
 /// @return {real}
 
 function TileToScreenY(_tY, _tX){
-     return ((_tX + _tY) * (TILE_H *0.5)) +(ROOM_H *0)
+     return ((_tX + _tY) * (TILE_H *0.5))
 }

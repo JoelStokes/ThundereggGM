@@ -1,11 +1,11 @@
 /// @desc Build the Map
 
-layer_set_visible("Map", false);
+layer_set_visible("Tilemap", false);
 layer_set_visible("Heightmap", false);
 
 global.theMap = ds_grid_create(MAP_W, MAP_H);
 
-var tileMap = layer_tilemap_get_id("Map");
+var tileMap = layer_tilemap_get_id("Tilemap");
 var heightMap = layer_tilemap_get_id("Heightmap");
 
 //Pull data from all rows/columns on map
@@ -25,6 +25,7 @@ for (var tX = 0; tX < MAP_W; tX++)
 		thisTile[TILE.SPRITE] = tileMapData;
 		
 		//Get value from height map number
+		//Needs rework. Could do mod 2 so alternate between z up/down?
 		var newZ = 0;
 		switch(heightMapData)
 		{
