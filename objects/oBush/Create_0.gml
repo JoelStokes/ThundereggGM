@@ -2,7 +2,7 @@
 x = GetObjIsoPosX(x, y, sprite_width);
 y = GetObjIsoPosY(x, y, sprite_height);
 
-depth = -200;
+depth = -y;
 
 inRect = false;
 battleChance = 15;

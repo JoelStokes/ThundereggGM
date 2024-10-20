@@ -6,10 +6,10 @@ ysp = 0;
 
 //Movement Handler
 var up, down, left, right;
-if (keyboard_check(vk_up)) up=true; else up=false;
-if (keyboard_check(vk_down)) down=true; else down=false;
-if (keyboard_check(vk_left)) left=true; else left=false;
-if (keyboard_check(vk_right)) right=true; else right=false;
+if (keyboard_check(vk_up) || keyboard_check(ord("W"))) up=true; else up=false;
+if (keyboard_check(vk_down) || keyboard_check(ord("S"))) down=true; else down=false;
+if (keyboard_check(vk_left) || keyboard_check(ord("A"))) left=true; else left=false;
+if (keyboard_check(vk_right)|| keyboard_check(ord("D"))) right=true; else right=false;
 
 if (up && right){xsp = NORTHEAST.x * moveSpeed; ysp = NORTHEAST.y * moveSpeed;}
 else if (up && left){xsp = NORTHWEST.x * moveSpeed; ysp = NORTHWEST.y * moveSpeed;}
@@ -22,6 +22,7 @@ else if (right){xsp = EAST.x * moveSpeed; ysp = EAST.y * moveSpeed;}
 
 phy_speed_x = xsp;
 phy_speed_y = ysp;
+depth = -y;
 
 //Camera setup & smooth following
 var target_x = x - cam_w()/2

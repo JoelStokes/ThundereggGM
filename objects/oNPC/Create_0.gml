@@ -1,5 +1,6 @@
 /// @desc Set NPC Pos
-x = GetObjIsoPosX(x, y, sprite_width);
-y = GetObjIsoPosY(x, y, sprite_height);
 
-depth = -100;
+phy_position_x = GetObjIsoPosX(phy_position_x, phy_position_y, sprite_width);
+phy_position_y = GetObjIsoPosY(phy_position_x, phy_position_y, sprite_height);
+
+depth = -y;

@@ -1,12 +1,10 @@
 /// @desc Set Player Pos & Variables
-x = GetObjIsoPosX(x, y, sprite_width);
-y = GetObjIsoPosY(x, y, sprite_height);
+phy_position_x = GetObjIsoPosX(phy_position_x, phy_position_y, sprite_width);
+phy_position_y = GetObjIsoPosY(phy_position_x, phy_position_y, sprite_height);
 
 xsp = 0;
 ysp = 0;
 phy_fixed_rotation = true;
-
-depth = -100;
 
 //Camera Speed Variables
 camXSpeed = .05;
