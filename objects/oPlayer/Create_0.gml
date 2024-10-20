@@ -4,6 +4,8 @@ y = GetObjIsoPosY(x, y, sprite_height);
 
 xsp = 0;
 ysp = 0;
+phy_fixed_rotation = true;
+
 depth = -100;
 
 //Camera Speed Variables

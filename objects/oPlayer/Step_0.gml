@@ -20,7 +20,8 @@ else if (down){xsp = SOUTH.x * moveSpeed; ysp = SOUTH.y * moveSpeed;}
 else if (left){xsp = WEST.x * moveSpeed; ysp = WEST.y * moveSpeed;}
 else if (right){xsp = EAST.x * moveSpeed; ysp = EAST.y * moveSpeed;}
 
-move_and_collide(xsp,ysp,oNPC);
+phy_speed_x = xsp;
+phy_speed_y = ysp;
 
 //Camera setup & smooth following
 var target_x = x - cam_w()/2

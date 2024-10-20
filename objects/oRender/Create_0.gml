@@ -2,11 +2,13 @@
 
 layer_set_visible("Tilemap", false);
 layer_set_visible("Heightmap", false);
+//layer_set_visible("Collisionmap", false);
 
 global.theMap = ds_grid_create(MAP_W, MAP_H);
 
 var tileMap = layer_tilemap_get_id("Tilemap");
 var heightMap = layer_tilemap_get_id("Heightmap");
+//var collisionMap = layer_tilemap_get_id("Collisionmap");
 
 //Pull data from all rows/columns on map
 for (var tX = 0; tX < MAP_W; tX++)
